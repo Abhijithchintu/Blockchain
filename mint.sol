@@ -4,13 +4,13 @@ import "https://github.com/0xcert/ethereum-erc721/blob/master/src/contracts/toke
 import "https://github.com/0xcert/ethereum-erc721/blob/master/src/contracts/tokens/nf-token-enumerable.sol";
 import "https://github.com/0xcert/ethereum-erc721/blob/master/src/contracts/ownership/ownable.sol";
 
-import './ERC2981PerTokenRoyalties.sol';
+import './royalty.sol';
 
 
-contract digitalToken is NFTokenEnumerable, NFTokenMetadata, Ownable, ERC2981PerTokenRoyalties{
+contract digitalToken is NFTokenEnumerable, NFTokenMetadata, Ownable, TokenRoyalties{
 
-    constructor(string memory _nftname,string memory _nftSymbol){
-      nftName = _name;
+    constructor(string memory _nftname,string memory _symbol){
+      nftName = _nftname;
       nftSymbol = _symbol;
     }
 
