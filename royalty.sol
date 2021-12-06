@@ -1,3 +1,4 @@
+// SPDX-License-Identifier: MIT
 pragma solidity ^0.8.6;
 
 import 'https://github.com/0xcert/ethereum-erc721/blob/master/src/contracts/utils/erc165.sol';
